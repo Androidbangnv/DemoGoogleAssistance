@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <capability
+        android:name="custom.actions.intent.EXAMPLE_INTENT"
+        app:queryPatterns="@array/ExampleQueries">
+        <intent>
+            <url-template android:value="http://todo.androidappactions.com{?number_of_items,item_name}" />
+            <parameter
+                android:name="number_of_items"
+                android:key="number_of_items"
+                android:mimeType="https://schema.org/Number" />
+            <parameter
+                android:name="item_name"
+                android:key="item_name"
+                android:mimeType="https://schema.org/Text" />
+        </intent>
+    </capability>
+
+
+    <capability android:name="actions.intent.GET_THING">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.demogoogleasisstent"
+            android:targetClass="com.example.demogoogleasisstent.MainActivity">
+            <parameter
+                android:name="thing.name"
+                android:key="q"/>
+        </intent>
+    </capability>
+
+    <capability android:name="actions.intent.OPEN_APP_FEATURE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.linhbd.demogoogleasisstent"
+            android:targetClass="com.example.demogoogleasisstent.MainActivity">
+            <parameter
+                android:name="feature"
+                android:key="feature"/>
+        </intent>
+    </capability>
+
+
+    <shortcut
+        android:shortcutId="active_tasks"
+        android:shortcutShortLabel="@string/label_active"
+        android:enabled="false">
+        <capability-binding
+            android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/active_tasks_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="completed_tasks"
+        android:shortcutShortLabel="@string/label_completed"
+        android:enabled="false">
+        <capability-binding
+            android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/completed_tasks_synonyms" />
+        </capability-binding>
+    </shortcut>
+
+
+</shortcuts>

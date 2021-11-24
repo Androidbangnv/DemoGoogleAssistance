@@ -31,5 +31,33 @@
     </array>
 
 
+    <string-array name="ExampleQueries">
+
+        <item>start making a $text1</item>
+        <item>start making an $text1</item>
+        <item>craft $number1 $text1 items</item>
+        <item>produce $text1 $number1 times</item>
+
+    </string-array>
+
+    <array name="completed_tasks_synonyms">
+        <item>completed</item>
+        <item>finished</item>
+        <item>finished tasks</item>
+    </array>
+    <array name="active_tasks_synonyms">
+        <item>active</item>
+        <item>pending</item>
+        <item>pending tasks</item>
+        <item>open</item>
+    </array>
+    <array name="all_tasks_synonyms">
+        <item>all</item>
+    </array>
+    <array name="statistics_synonyms">
+        <item>show statistics</item>
+        <item>show progress</item>
+        <item>stats</item>
+    </array>
 
 </resources>
