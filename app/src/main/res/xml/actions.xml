@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions>
+    <action intentName="actions.intent.OPEN_APP_FEATURE">
+
+
+<!--        Xác định việc thực hiện hành động-->
+        <fulfillment urlTemplate="{@url}"/>
+
+        <fulfillment urlTemplate="https://todo.linbd.com/navigate??place={place}">
+            <parameter-mapping intentParameter="feature" urlParameter="place" />
+        </fulfillment>
+
+        <parameter name="feature">
+            <entity-set-reference entitySetId="FeatureEntitySet" />
+        </parameter>
+
+    </action>
+
+
+    <action intentName="actions.intent.GET_THING">
+        <fulfillment urlTemplate="https://todo.linbd.com/navigation%20to%20/?place={place}"
+            >
+            <parameter-mapping intentParameter="thing.name" urlParameter="place"/>
+        </fulfillment>
+    </action>
+
+
+    <action intentName="actions.intent.CREATE_THING">
+        <fulfillment urlTemplate="https://todo.linbd.com/navigation%20to%20?place={place}">
+            <parameter-mapping intentParameter="thing.name" urlParameter="place"/>
+        </fulfillment>
+
+
+    </action>
+
+<!--    Các alternateName entitythuộc tính định nghĩa một mảng các từ đồng nghĩa cho mỗi tên tính năng ứng dụng,
+cho phép trợ lý để phù hợp với biến thể phổ biến của một tên tính năng để một tổ chức hỗ trợ.
+ Trong ứng dụng mẫu, các từ đồng nghĩa được đặt ở app/res/values/arrays.xml.-->
+
+    <entity-set entitySetId="FeatureEntitySet">
+        <entity  url="https://todo.linbd.com/car_park"
+            name="car park" alternateName="@array/car_park"/>
+
+        <entity  url="https://todo.linbd.com/navigate"
+            name="navigate car" alternateName="@array/navigate_car"/>
+    </entity-set>
+
+
+<!--    <entity-set entitySetId="get_thing_set">-->
+<!--        <entity  url="https://todo.linbd.com/navigation%20to%20"-->
+<!--            name="get place" alternateName="@array/place_thing"/>-->
+<!--    </entity-set>-->
+</actions>
