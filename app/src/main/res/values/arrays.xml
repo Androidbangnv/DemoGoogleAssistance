@@ -31,5 +31,19 @@
     </array>
 
 
+    <string-array name="ExampleQueries">
+        <item>go to $text1</item>
+        <item>start making a $text1</item>
+        <item>navigate to $text1</item>
+    </string-array>
+
+
+
+<!--    <array name="driversLicenseSynonyms">-->
+<!--        <item>license driver</item>-->
+<!--        <item>show license driver</item>-->
+<!--    </array>-->
+
+
 
 </resources>
