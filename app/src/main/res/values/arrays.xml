@@ -21,13 +21,8 @@
         <item>car parks</item>
         <item>parking</item>
     </array>
-    <array name="navigate_car">
-        <item>navigate to</item>
-        <item>go to</item>
-        <item>breeze to</item>
-        <item>around me</item>
-        <item>near me</item>
-
+    <array name="cruise_mode">
+        <item>cruise mode</item>
     </array>
 
 
