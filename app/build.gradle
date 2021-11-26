@@ -10,7 +10,7 @@ android {
         applicationId "com.linhbd.demogoogleasisstent"
         minSdk 21
         targetSdk 31
-        versionCode 30
+        versionCode 33
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

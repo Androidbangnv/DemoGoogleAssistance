@@ -28,9 +28,10 @@
             url="https://todo.linbd.com/car_park" />
 
         <entity
-            name="cruise mode car"
-            alternateName="@array/cruise_mode"
-            url="https://todo.linbd.com/cruise_mode" />
+            name="end navigation"
+            alternateName="@array/end_navigation"
+            url="https://todo.linbd.com/end_navigation" />
+
     </entity-set>
 
 
@@ -42,4 +43,13 @@
             <parameter-mapping intentParameter="text1" urlParameter="text1" />
         </fulfillment>
     </action>
+
+    <action intentName="custom.actions.intent.CRUISE_MODE" queryPatterns="@array/queries_cruise_mode">
+
+        <fulfillment urlTemplate="https://todo.linbd.com/cruise_mode">
+        </fulfillment>
+    </action>
+
+
+
 </actions>

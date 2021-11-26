@@ -21,8 +21,13 @@
         <item>car parks</item>
         <item>parking</item>
     </array>
-    <array name="cruise_mode">
-        <item>cruise mode</item>
+
+
+
+
+    <array name="end_navigation">
+        <item>stop navigation</item>
+        <item>stop car </item>
     </array>
 
 
@@ -30,6 +35,13 @@
         <item>go to $text1</item>
         <item>start making a $text1</item>
         <item>navigate to $text1</item>
+    </string-array>
+
+
+    <string-array name="queries_cruise_mode">
+        <item>cruise mode</item>
+        <item>turn off cruise mode</item>
+        <item>turn on cruise mode</item>
     </string-array>
 
 
